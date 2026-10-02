@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Five logomark directions · Vipin Sao</title>
+<meta name="description" content="Five logomark directions for a consumer healthcare product people trust with their medical records and their money. Tested at 16 px, in one colour, inside product UI.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Five logomark directions for a consumer health product">
+<meta property="og:description" content="Mark only. Tested at 16 px and 1024 px, in one colour, positive and reversed, inside product UI. Concept by Vipin Sao.">
+<meta property="og:image" content="https://vipinsao.github.io/health-logomark-directions/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" id="fav" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,500&display=swap" rel="stylesheet">
+<script src="marks.js"></script>
+<style>
+:root{--paper:#F2EFE8;--card:#FAF8F3;--ink:#11141A;--ink2:#1C2029;--body:#2A2E36;--mut:#666A72;--line:rgba(17,20,26,.14);--acc:#2B4EF0;--pad:clamp(20px,5vw,64px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);font-family:Geist,system-ui,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.wrap{max-width:1368px;margin:0 auto;padding:0 var(--pad)}
+.mono{font-family:"Geist Mono",ui-monospace,monospace;font-size:13px;letter-spacing:.09em;text-transform:uppercase;font-weight:500}
+.m{display:inline-block;line-height:0}
+.m svg{width:100%;height:100%;display:block}
+.px{image-rendering:pixelated;display:block}
+.app{display:inline-grid;place-items:center;background:var(--ink);color:var(--paper);border-radius:22.5%;flex:none}
+.app .m{width:56%;height:56%}
+section{padding:clamp(64px,9vw,128px) 0;border-top:1px solid var(--line)}
+.eyebrow{color:var(--mut);display:flex;gap:12px;align-items:center}
+.eyebrow b{color:var(--acc);font-weight:500}
+h2{font-size:clamp(32px,4.600vw,62px);line-height:1.04;letter-spacing:-.035em;font-weight:600;margin-top:18px;max-width:17em;text-wrap:balance}
+.sub{font-size:clamp(17px,1.500vw,21px);line-height:1.5;color:var(--mut);max-width:44em;margin-top:18px}
+.note{color:var(--mut);display:flex;gap:10px;align-items:center;margin-top:16px}
+.note:before{content:"";width:22px;height:1.5px;background:var(--acc);flex:none}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:calc(var(--i,0)*70ms)}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* hero */
+.hero{background:var(--ink);color:var(--paper);padding:clamp(24px,3vw,44px) 0 clamp(56px,7vw,96px)}
+.hero .bar{display:flex;justify-content:space-between;gap:16px;color:rgba(242,239,232,.6)}
+.hero .bar i{font-style:normal}
+.hero .bar a{text-decoration:none;border-bottom:1px solid rgba(242,239,232,.3)}
+.hero h1{font-size:clamp(40px,7.400vw,108px);line-height:1;letter-spacing:-.04em;font-weight:600;margin-top:clamp(48px,7vw,96px);max-width:15.800em;text-wrap:balance}
+.hero h1 em{font-style:normal;color:rgba(242,239,232,.45)}
+.hero .lede{font-size:clamp(17px,1.800vw,25px);line-height:1.42;color:rgba(242,239,232,.62);margin-top:clamp(18px,2.200vw,30px);max-width:36em}
+.tiles{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(8px,1.600vw,24px);margin-top:clamp(40px,5vw,68px)}
+.tiles button{display:block;width:100%;text-align:left}
+.tile{aspect-ratio:1;border-radius:clamp(12px,2vw,26px);display:grid;place-items:center;background:var(--ink2);color:var(--paper);transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+.tiles button:hover .tile{transform:translateY(-6px)}
+.tile .m{width:50%;height:50%}
+.tile.p{background:var(--paper);color:var(--ink)}
+.tile.a{background:var(--acc);color:#fff}
+.cap{margin-top:14px;display:flex;gap:12px;color:rgba(242,239,232,.5)}
+.cap b{color:var(--paper);font-weight:500}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:clamp(36px,4vw,56px);color:rgba(242,239,232,.55)}
+
+/* directions */
+.dirs{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;margin-top:clamp(32px,4vw,56px)}
+.dir{text-align:left;display:block;align-self:start;border-radius:22px;padding:0 0 4px}
+.dir .box{aspect-ratio:1;border-radius:20px;background:var(--card);border:1px solid var(--line);display:grid;place-items:center;transition:border-color .2s,box-shadow .2s}
+.dir .box .m{width:50%;height:50%}
+.dir[aria-pressed=true] .box{border-color:var(--ink);box-shadow:0 0 0 1px var(--ink)}
+.dir .k{margin-top:20px;color:var(--acc);font-size:12px}
+.dir h3{font-size:clamp(24px,2.300vw,32px);letter-spacing:-.03em;font-weight:600;margin-top:8px}
+.dir p{font-size:16.500px;line-height:1.48;margin-top:10px;color:var(--body)}
+.banned{display:flex;flex-wrap:wrap;gap:10px 24px;color:var(--mut);margin-top:clamp(36px,4vw,56px);padding-top:24px;border-top:1px solid var(--line)}
+.banned s{color:var(--ink);text-decoration-thickness:1.5px;text-decoration-color:var(--acc)}
+
+/* 16 px */
+.zooms{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:clamp(14px,2.400vw,36px);margin-top:clamp(32px,4vw,56px)}
+.zoom{position:relative;aspect-ratio:1;background:var(--card);outline:1px solid var(--line)}
+.zoom img{width:100%;height:100%}
+.zoom:after{content:"";position:absolute;inset:0;background-image:linear-gradient(to right,rgba(17,20,26,.07) 1px,transparent 1px),linear-gradient(to bottom,rgba(17,20,26,.07) 1px,transparent 1px);background-size:6.250% 6.250%}
+.sc .lab{margin-top:12px;color:var(--mut);display:flex;justify-content:space-between}
+.sc .lab b{color:var(--ink);font-weight:500}
+.sc .fact{font-size:15.500px;color:var(--body);margin-top:6px;line-height:1.4}
+.ladder{display:flex;align-items:flex-end;gap:7px;margin-top:22px}
+.sc{min-width:0}
+
+/* colour */
+.cgrid{display:grid;grid-template-columns:150px repeat(5,1fr);gap:clamp(8px,1.400vw,20px);margin-top:clamp(32px,4vw,56px)}
+.cgrid .rl{display:flex;flex-direction:column;justify-content:center;gap:6px}
+.cgrid .rl b{font-size:21px;font-weight:600;letter-spacing:-.02em}
+.cgrid .rl span{color:var(--mut);font-size:11.500px}
+.t{aspect-ratio:1.300;border-radius:clamp(10px,1.400vw,18px);display:grid;place-items:center}
+.t .m{width:38%;aspect-ratio:1;height:auto}
+.t.pos{background:var(--card);border:1px solid var(--line);color:var(--ink)}
+.t.rev{background:var(--ink);color:var(--paper)}
+.t.col{background:var(--acc);color:#fff}
+
+/* picker */
+.picker{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.picker button{display:flex;align-items:center;gap:10px;height:46px;padding:0 16px 0 12px;border-radius:999px;border:1px solid var(--line);font-size:15px;font-weight:500;background:var(--card);transition:background .2s,color .2s,border-color .2s}
+.picker button .m{width:22px;height:22px}
+.picker button[aria-pressed=true]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.live{margin-top:14px;font-size:15.500px;color:var(--mut);max-width:46em;line-height:1.5}
+.live b{color:var(--ink);font-weight:500}
+
+/* product */
+.stage{display:grid;grid-template-columns:300px minmax(0,1fr) minmax(0,400px);gap:clamp(28px,3.600vw,52px);margin-top:36px;align-items:start}
+.phone{width:300px;height:600px;border-radius:48px;border:8px solid var(--ink);background:linear-gradient(160deg,#DAD6CB,#B9BFC6 60%,#A9B3BD);padding:15px 19px;position:relative;overflow:hidden;margin:0 auto}
+.phone .sb{display:flex;justify-content:space-between;font-weight:600;font-size:13px;padding:1px 8px 0}
+.phone .island{position:absolute;top:10px;left:50%;width:84px;height:24px;margin-left:-42px;border-radius:16px;background:var(--ink)}
+.phone .grid{display:grid;grid-template-columns:repeat(4,50px);justify-content:space-between;row-gap:17px;margin-top:34px}
+.ic{display:flex;flex-direction:column;align-items:center;gap:6px;font-size:9.500px;font-weight:500;height:68px}
+.ic i{width:50px;height:50px;border-radius:22.5%;display:block}
+.ic u{height:6px;border-radius:3px;background:rgba(17,20,26,.28);display:block;margin:3px 0}
+.ic .app{width:50px;height:50px}
+.phone .dock{position:absolute;left:11px;right:11px;bottom:11px;height:74px;border-radius:28px;background:rgba(255,255,255,.34);display:flex;justify-content:space-around;align-items:center;padding:0 9px}
+.phone .dock i{width:50px;height:50px;border-radius:22.5%;display:block}
+.browser{border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#fff;box-shadow:0 30px 60px -30px rgba(17,20,26,.25)}
+.tabs{display:flex;align-items:flex-end;gap:6px;background:#E4E1D9;padding:12px 14px 0;height:54px;overflow:hidden}
+.tabs .dots{display:flex;gap:8px;align-self:center;margin:0 12px 10px 4px}
+.tabs .dots i{width:12px;height:12px;border-radius:50%;background:#C4C0B6;display:block}
+.tab{height:42px;border-radius:10px 10px 0 0;padding:0 14px;display:flex;align-items:center;gap:10px;font-size:13.500px;font-weight:500;color:var(--mut);white-space:nowrap;flex:none}
+.tab.on{background:#fff;color:var(--ink)}
+.tab .g{width:16px;height:16px;border-radius:4px;background:#BDB9AF;flex:none}
+.tab img{width:16px;height:16px;flex:none}
+.tab .x{margin-left:14px;color:#A7A39A}
+.addr{padding:10px 16px;border-bottom:1px solid #ECEAE4}
+.addr span{background:#F3F1EC;border-radius:9px;height:34px;display:flex;align-items:center;padding:0 14px;font-size:14px;color:var(--mut)}
+.pagec{padding:clamp(18px,2.400vw,26px) clamp(18px,2.800vw,34px) clamp(22px,2.800vw,30px)}
+.nav{display:flex;align-items:center;gap:11px;font-weight:600;font-size:20px;letter-spacing:-.02em}
+.nav .m{width:28px;height:28px}
+.nav nav{margin-left:auto;display:flex;gap:22px;font-size:14px;font-weight:500;color:var(--mut)}
+.claim{margin-top:22px;border:1px solid #ECEAE4;border-radius:16px;padding:22px 24px;display:flex;flex-wrap:wrap;gap:16px 30px;justify-content:space-between;align-items:flex-end}
+.claim small{font-size:14px;color:var(--mut)}
+.claim .st{font-size:14px;font-weight:500;color:var(--acc);display:flex;align-items:center;gap:8px}
+.claim .st:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--acc)}
+.claim h4{font-size:clamp(30px,3.400vw,42px);letter-spacing:-.035em;font-weight:600;margin-top:6px}
+.claim .rows{font-size:14.500px;color:var(--mut);line-height:1.7}
+.claim .rows b{color:var(--ink);font-weight:500;margin-left:18px}
+.btn{display:inline-flex;height:40px;align-items:center;padding:0 18px;border-radius:10px;background:var(--ink);color:#fff;font-size:14.500px;font-weight:500;margin-top:12px}
+.dark{margin-top:22px;border-radius:14px;overflow:hidden;background:#1C2029}
+.dark .tabs{background:#0C0E12}
+.dark .tabs .dots i{background:#3A3F4A}
+.dark .tab{color:#8B909A}
+.dark .tab.on{background:#1C2029;color:#F2EFE8}
+.dark .tab .g{background:#3A3F4A}
+.dark .tab.pin{padding:0 13px}
+.lock{margin-top:clamp(32px,4vw,52px);border-radius:16px;background:var(--card);border:1px solid var(--line);display:grid;grid-template-columns:repeat(3,1fr)}
+.lock div{display:flex;align-items:center;justify-content:center;gap:.340em;height:clamp(110px,13vw,170px);font-size:clamp(24px,3.300vw,46px);border-right:1px solid var(--line)}
+.lock div:last-child{border:0}
+.lock .m{width:1.160em;height:1.160em}
+.side{display:flex;flex-direction:column;gap:20px;min-width:0}
+.notif{border-radius:24px;background:rgba(255,255,255,.72);border:1px solid var(--line);padding:15px 17px;display:flex;gap:13px;align-items:center}
+.notif .app{width:46px;height:46px}
+.notif b{font-size:15.500px;font-weight:600;display:flex;justify-content:space-between}
+.notif b span{font-weight:400;color:var(--mut);font-size:13.500px}
+.notif p{font-size:15px;line-height:1.35;margin-top:2px;color:var(--body)}
+.notif>div{flex:1}
+.list{border-radius:20px;background:#fff;border:1px solid var(--line);padding:6px 18px}
+.list .r{display:flex;align-items:center;gap:13px;padding:12px 0;border-bottom:1px solid #EFEDE7;font-size:15.500px;font-weight:500}
+.list .r:last-child{border:0}
+.list .r small{display:block;font-size:13px;color:var(--mut);font-weight:400;margin-top:1px}
+.list .r em{margin-left:auto;font-style:normal;font-variant-numeric:tabular-nums}
+.av{width:38px;height:38px;border-radius:50%;flex:none;display:grid;place-items:center;background:#DDD9CF}
+.av.us{background:var(--ink);color:var(--paper)}
+.av .m{width:21px;height:21px}
+.ghost u{display:block;height:9px;border-radius:5px;background:#E4E1D9;width:110px}
+.ghost small u{height:7px;width:70px;margin-top:7px;background:#EFEDE7}
+.ghost em u{width:48px}
+.sizesrow{display:flex;align-items:flex-end;gap:14px;margin-top:8px}
+.sizesrow div{display:flex;flex-direction:column;align-items:center;gap:9px;color:var(--mut);font-size:11.500px;font-family:"Geist Mono",monospace}
+
+/* recommendation */
+.rec{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.100fr);gap:clamp(36px,5vw,72px);margin-top:8px;align-items:start}
+.plan{grid-column:1/-1;padding-top:clamp(28px,3vw,44px);border-top:1px solid var(--line)}
+.why{margin-top:30px;display:flex;flex-direction:column;gap:18px}
+.why div{display:grid;grid-template-columns:32px 1fr;font-size:18.500px;line-height:1.45;color:var(--body)}
+.why div span{color:var(--acc);font-family:"Geist Mono",monospace;font-size:13px;padding-top:5px}
+.runner{margin-top:26px;padding-top:22px;border-top:1px solid var(--line);font-size:16.500px;line-height:1.45;color:var(--mut);display:flex;gap:16px;align-items:center}
+.runner .m{width:44px;height:44px;color:var(--ink);flex:none}
+.uses{margin-top:30px;border-radius:22px;background:var(--ink);color:var(--paper);padding:34px 10px 28px;display:grid;grid-template-columns:repeat(3,1fr);justify-items:center}
+.uses div{display:flex;flex-direction:column;align-items:center;gap:18px;color:rgba(242,239,232,.6);font-size:11.500px;text-align:center}
+.uses span{height:80px;display:flex;align-items:center;gap:9px}
+.uses .m{width:80px;height:80px;color:var(--paper)}
+.uses b{display:block;border-radius:50%;background:var(--paper);width:24px;height:24px}
+.uses .load b{animation:blink 1.200s infinite both}
+.uses .load b:nth-child(2){animation-delay:.180s}
+.uses .load b:nth-child(3){animation-delay:.360s}
+@keyframes blink{0%,80%,100%{opacity:.25}40%{opacity:1}}
+@media (prefers-reduced-motion:reduce){.uses .load b{animation:none}}
+.rules{border-radius:22px;background:var(--card);border:1px solid var(--line);padding:clamp(20px,2.600vw,30px)}
+.rules .hd{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--mut)}
+.rules .two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;margin-top:22px;align-items:center}
+.rules .two svg{width:100%;height:auto}
+.rules h5{font-size:18px;font-weight:600;letter-spacing:-.01em}
+.rules p{font-size:15px;line-height:1.45;color:var(--mut);margin-top:6px}
+.rules .min{display:flex;align-items:flex-end;gap:14px;margin-top:14px}
+.cuse,.donts{display:grid;gap:12px;margin-top:24px;padding-top:24px;border-top:1px solid var(--line)}
+.cuse{grid-template-columns:repeat(3,1fr)}
+.donts{grid-template-columns:repeat(4,1fr)}
+.cuse div,.donts div{font-size:13px;color:var(--mut);text-align:center;line-height:1.3}
+.cuse i{display:grid;place-items:center;height:96px;border-radius:12px;margin-bottom:9px;aspect-ratio:auto}
+.cuse .m{width:46px;height:46px}
+.donts i{display:grid;place-items:center;height:96px;border-radius:12px;background:#EFECE4;margin-bottom:9px;position:relative;overflow:hidden}
+.donts i:after{content:"";position:absolute;left:-10%;right:-10%;top:50%;height:1.5px;background:var(--acc);transform:rotate(-36deg)}
+.donts svg{width:48px;height:48px}
+.steps{margin-top:26px;border-top:1.5px solid var(--ink);padding-top:22px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px}
+.steps div{position:relative;font-size:18px;line-height:1.42;color:var(--body)}
+.steps div:before{content:"";position:absolute;left:0;top:-28.500px;width:11px;height:11px;border-radius:50%;background:var(--ink)}
+.steps b{display:block;font-family:"Geist Mono",monospace;font-size:12.500px;letter-spacing:.08em;color:var(--mut);font-weight:500;text-transform:uppercase;margin-bottom:4px}
+.files{margin-top:34px;font-size:17px;line-height:1.7;color:var(--body);display:flex;flex-wrap:wrap;gap:4px 34px}
+.files br{display:none}
+.files span:before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--acc);margin-right:10px;vertical-align:middle}
+.files b{font-weight:600}
+
+/* close */
+.close{background:var(--ink);color:var(--paper);border:0}
+.close h2{max-width:14em}
+.close p{font-size:clamp(17px,1.600vw,21px);line-height:1.5;color:rgba(242,239,232,.62);max-width:36em;margin-top:18px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.cta a{display:inline-flex;align-items:center;height:54px;padding:0 26px;border-radius:999px;font-size:17px;font-weight:500;text-decoration:none;border:1px solid rgba(242,239,232,.3);transition:transform .2s}
+.cta a:hover{transform:translateY(-2px)}
+.cta a.pri{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.fine{margin-top:clamp(48px,6vw,84px);padding-top:24px;border-top:1px solid rgba(242,239,232,.16);display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:space-between;color:rgba(242,239,232,.5)}
+
+@media (max-width:1000px){
+  .rec{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:1120px){
+  .stage{grid-template-columns:300px minmax(0,1fr)}
+  .side{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:20px 28px;align-items:start}
+  .dirs{grid-template-columns:repeat(3,1fr)}
+  .zooms{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:760px){
+  .mono{font-size:11.500px}
+  .cap span,.hero .bar span:first-child i{display:none}
+  .cap{margin-top:9px;font-size:9px;letter-spacing:.04em}
+  .dirs{grid-template-columns:1fr;gap:26px}
+  .dir{display:grid;grid-template-columns:104px 1fr;column-gap:18px}
+  .dir .box{grid-row:1/4;border-radius:16px;align-self:start}
+  .dir .k{margin-top:2px}
+  .dir p{font-size:16px}
+  .zooms{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ladder img:last-child{display:none}
+  .sizesrow{gap:10px}
+  .sizesrow div:first-child .app{width:104px!important;height:104px!important}
+  .cgrid{grid-template-columns:repeat(5,1fr)}
+  .cgrid .rl{grid-column:1/-1;flex-direction:row;align-items:baseline;justify-content:flex-start;gap:12px;margin-top:14px}
+  .t{aspect-ratio:1}
+  .t .m{width:52%}
+  .stage{grid-template-columns:minmax(0,1fr)}
+  .side{grid-template-columns:minmax(0,1fr)}
+  .nav nav{display:none}
+  .rec{grid-template-columns:minmax(0,1fr)}
+  .steps{grid-template-columns:1fr;border-top:0;border-left:1.5px solid var(--ink);padding:0 0 0 22px;gap:24px}
+  .steps div:before{left:-28.500px;top:6px}
+  .files{flex-direction:column}
+  .lock{grid-template-columns:1fr}
+  .lock div{border-right:0;border-bottom:1px solid var(--line);height:88px;font-size:30px}
+  .donts{grid-template-columns:1fr 1fr}
+  .rules .two{grid-template-columns:1fr}
+  .rules .two svg{max-width:260px;margin:0 auto;display:block}
+  .tab.hide{display:none}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add("js")</script>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="bar mono"><span>Logomark concept<i> · Five directions</i></span><a href="https://contra.com/vipin_sao_z8eilxkm">Vipin Sao</a></div>
+    <h1 class="rv">A mark people can trust with their medical records <em>and</em> their money.</h1>
+    <p class="lede rv" style="--i:1">Five directions for a consumer healthcare product. Mark only. No shield, no cross, no caduceus, no heart, no checkmark.</p>
+    <div class="tiles" id="tiles"></div>
+    <div class="facts mono rv" style="--i:3"><span>16 px to 1024 px</span><span>One colour, positive and reversed</span><span>Shown inside product UI</span></div>
+  </div>
+</header>
+
+<main>
+<section id="directions">
+  <div class="wrap">
+    <div class="eyebrow mono"><b>01</b>The directions</div>
+    <h2 class="rv">Five directions. One sentence each.</h2>
+    <p class="sub rv">Five different ways to earn trust. Pick one and the rest of this page, including the icon in your browser tab, switches to it.</p>
+    <div class="dirs" id="dirs"></div>
+    <div class="banned mono"><span>Ruled out before the first sketch</span><s>Shield</s><s>Cross</s><s>Caduceus</s><s>Heart</s><s>Checkmark</s></div>
+  </div>
+</section>
+
+<section id="small">
+  <div class="wrap">
+    <div class="eyebrow mono"><b>02</b>Small-size test</div>
+    <h2 class="rv">Drawn for 16 px first.</h2>
+    <p class="sub rv">Each mark is rasterised here, in your browser, at a true 16 × 16 pixels, then enlarged so you can see exactly what a browser tab gets. All five hold with the master drawing: no simplified variant needed.</p>
+    <div class="zooms" id="zooms"></div>
+  </div>
+</section>
+
+<section id="colour">
+  <div class="wrap">
+    <div class="eyebrow mono"><b>03</b>Colour test</div>
+    <h2 class="rv">One colour. Positive and reversed.</h2>
+    <p class="sub rv">No gradients, no second colour, no outline needed to hold the shape. The blue is a placeholder for your brand colour.</p>
+    <div class="cgrid" id="cgrid"></div>
+  </div>
+</section>
+
+<section id="product">
+  <div class="wrap">
+    <div class="eyebrow mono"><b>04</b>In product</div>
+    <h2 class="rv">Where it has to work: inside the product.</h2>
+    <div class="picker" id="picker" role="group" aria-label="Choose a direction"></div>
+    <p class="live"><b data-name></b>: <span data-sent></span> "yourapp" stands in for your name.</p>
+    <div class="stage">
+      <div class="phone rv">
+        <div class="island"></div>
+        <div class="sb"><span>9:41</span><span>5G</span></div>
+        <div class="grid" id="home"></div>
+        <div class="dock"><i style="background:#8FA08C"></i><i style="background:#E9E5DA"></i><i style="background:#7C8AA0"></i><i style="background:#C9A98F"></i></div>
+      </div>
+      <div class="rv" style="--i:1;min-width:0">
+        <div class="browser">
+          <div class="tabs">
+            <div class="dots"><i></i><i></i><i></i></div>
+            <div class="tab on"><img class="px" alt="" data-r="sel" data-px="16" data-fg="#11141A"><span>Claim approved · yourapp</span><span class="x">×</span></div>
+            <div class="tab hide"><i class="g"></i><span>Inbox</span></div>
+            <div class="tab hide"><i class="g"></i><span>Calendar</span></div>
+          </div>
+          <div class="addr"><span>yourapp.com/claims/4821</span></div>
+          <div class="pagec">
+            <div class="nav"><i class="m" data-m="sel"></i>yourapp<nav><span>Records</span><span>Claims</span><span>Payments</span></nav></div>
+            <div class="claim">
+              <div>
+                <div class="st">Claim approved</div>
+                <h4>You owe $0.00</h4>
+                <small>Lab work · Dr. Mehta · 14 Sep</small>
+              </div>
+              <div class="rows">Billed<b>$310.00</b><br>Plan paid<b>$310.00</b><br><span class="btn">View record</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="dark">
+          <div class="tabs">
+            <div class="dots"><i></i><i></i><i></i></div>
+            <div class="tab pin hide"><i class="g"></i></div>
+            <div class="tab pin on"><img class="px" alt="" data-r="sel" data-px="16" data-fg="#F2EFE8"></div>
+            <div class="tab pin hide"><i class="g"></i></div>
+            <div class="tab on"><img class="px" alt="" data-r="sel" data-px="16" data-fg="#F2EFE8"><span>Payments · yourapp</span><span class="x">×</span></div>
+            <div class="tab hide"><i class="g"></i><span>Docs</span></div>
+          </div>
+        </div>
+        <div class="note mono">Favicons are true 16 px renders, light and dark</div>
+      </div>
+      <div class="side rv" style="--i:2">
+        <div>
+          <div class="notif">
+            <span class="app"><i class="m" data-m="sel"></i></span>
+            <div><b>yourapp <span>now</span></b><p>Your lab results are in. Nothing is owed for this visit.</p></div>
+          </div>
+          <div class="list" style="margin-top:20px">
+            <div class="r ghost"><span class="av"></span><div><u></u><small><u></u></small></div><em><u></u></em></div>
+            <div class="r"><span class="av us"><i class="m" data-m="sel"></i></span><div>yourapp<small>Copay · Dr. Mehta</small></div><em>−$42.00</em></div>
+            <div class="r ghost"><span class="av"></span><div><u></u><small><u></u></small></div><em><u></u></em></div>
+          </div>
+          <div class="note mono">Notification icon and transaction avatar</div>
+        </div>
+        <div>
+          <div class="sizesrow">
+            <div><span class="app" style="width:132px;height:132px"><i class="m" data-m="sel"></i></span>1024</div>
+            <div><span class="app" style="width:76px;height:76px"><i class="m" data-m="sel"></i></span>180</div>
+            <div><span class="app" style="width:52px;height:52px"><i class="m" data-m="sel"></i></span>120</div>
+            <div><span class="app" style="width:36px;height:36px"><i class="m" data-m="sel"></i></span>80</div>
+            <div><span class="app" style="width:28px;height:28px"><i class="m" data-m="sel"></i></span>58</div>
+          </div>
+          <div class="note mono">App icon set, one master</div>
+        </div>
+      </div>
+    </div>
+    <div class="lock rv">
+      <div style="font-weight:600;letter-spacing:-.035em"><i class="m" data-m="sel"></i>wordmark</div>
+      <div style="font-family:Newsreader,serif;font-weight:500;letter-spacing:-.02em"><i class="m" data-m="sel"></i><span style="font-size:1.100em">wordmark</span></div>
+      <div style="font-family:'Geist Mono',monospace;font-weight:500;letter-spacing:-.04em"><i class="m" data-m="sel"></i><span style="font-size:.900em">wordmark</span></div>
+    </div>
+    <div class="note mono">Next to a wordmark: tested with a grotesk, a serif and a mono</div>
+  </div>
+</section>
+
+<section id="pick">
+  <div class="wrap">
+    <div class="eyebrow mono"><b>05</b>Recommendation and handover</div>
+    <div class="rec">
+      <div class="rv">
+        <h2>If it were my call: Threshold.</h2>
+        <div class="why">
+          <div><span>1</span>It is the only one with a person in it, and trust is about who is on the other side.</div>
+          <div><span>2</span>The arch carries the weight of a bank or a courthouse; the dot keeps it at human scale.</div>
+          <div><span>3</span>It fills an app icon, survives 16 px, and the dot can work alone as a badge or loading state.</div>
+        </div>
+        <div class="runner"><i class="m" data-m="overlap"></i><span>Runner-up: Overlap, if you would rather the mark explain the product than welcome the person.</span></div>
+        <div class="uses mono">
+          <div><span><i class="m" data-m="threshold"></i></span>The mark</div>
+          <div><span><b></b></span>The dot as badge</div>
+          <div><span class="load"><b></b><b></b><b></b></span>As loading state</div>
+        </div>
+      </div>
+      <div class="rules rv" style="--i:1">
+        <div class="hd mono"><span>Usage rules</span><span>Sample of the one-page deliverable</span></div>
+        <div class="two">
+          <svg viewBox="-10 -10 84 81" role="img" aria-label="Clear space diagram">
+            <rect x="-6" y="-6" width="76" height="73" fill="none" stroke="#2B4EF0" stroke-width=".5" stroke-dasharray="2 2"/>
+            <g fill="#2B4EF0" opacity=".16"><rect x="-6" y="-6" width="14" height="14"/><rect x="56" y="-6" width="14" height="14"/><rect x="-6" y="53" width="14" height="14"/><rect x="56" y="53" width="14" height="14"/></g>
+            <g fill="#11141A" id="csmark"></g>
+            <g font-family="Geist Mono,monospace" font-size="4.200" fill="#2B4EF0"><text x="-1" y="2.500">x</text><text x="61" y="2.500">x</text><text x="-1" y="61.500">x</text><text x="61" y="61.500">x</text></g>
+          </svg>
+          <div>
+            <h5>Clear space</h5>
+            <p>Keep one dot-width (x) free on every side. Nothing enters it: no type, no edge, no other logo.</p>
+            <h5 style="margin-top:18px">Minimum size</h5>
+            <p>16 px on screen, 5 mm in print.</p>
+            <div class="min"><img class="px" alt="" data-r="threshold" data-px="16" data-fg="#11141A" style="width:16px;height:16px"><i class="m" data-m="threshold" style="width:32px;height:32px"></i><i class="m" data-m="threshold" style="width:52px;height:52px"></i></div>
+          </div>
+        </div>
+        <div class="cuse">
+          <div><i class="t pos"><span class="m" data-m="threshold"></span></i>Ink on light</div>
+          <div><i class="t rev"><span class="m" data-m="threshold"></span></i>Light on ink</div>
+          <div><i class="t col"><span class="m" data-m="threshold"></span></i>White on brand colour</div>
+        </div>
+        <div class="donts">
+          <div><i><svg viewBox="8 6.500 48 48" fill="#11141A" style="transform:scaleX(1.5)" data-d></svg></i>Don't stretch</div>
+          <div><i><svg viewBox="8 6.500 48 48" fill="none" stroke="#11141A" stroke-width="1.600" data-d></svg></i>Don't outline</div>
+          <div><i><svg viewBox="8 6.500 48 48" fill="#11141A" style="transform:rotate(24deg)" data-d></svg></i>Don't rotate</div>
+          <div><i><svg viewBox="8 6.500 48 48" fill="#11141A" data-d="split"></svg></i>Don't recolour parts</div>
+        </div>
+      </div>
+      <div class="plan rv" style="--i:2">
+        <div class="mono" style="color:var(--mut)">The 2 days</div>
+        <div class="steps">
+          <div><b>Hour 0</b>Kickoff: your name, wordmark and three brands you respect.</div>
+          <div><b>Day 1, evening</b>Five directions drawn around your name, tested like these.</div>
+          <div><b>Day 2</b>You pick one. Two refinement rounds, same day.</div>
+          <div><b>Hour 48</b>Final files delivered. IP assigned on final payment.</div>
+        </div>
+        <div class="files"><b>Final files</b><span>SVG, PDF and PNG: positive, reversed, monochrome</span><span>App icon and favicon set at standard sizes</span><span>One page of usage rules</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="close">
+  <div class="wrap">
+    <div class="eyebrow mono" style="color:rgba(242,239,232,.55)">Next step</div>
+    <h2 class="rv">These were drawn blind. The real ones start with your name.</h2>
+    <p class="rv" style="--i:1">I made these without knowing what the product is called or what its wordmark looks like. Twenty minutes on a call fixes that, and the next five are built around both.</p>
+    <div class="cta rv" style="--i:2"><a class="pri" href="https://calendly.com/vipinc-sao/30min">Book a 30-minute call</a><a href="https://contra.com/vipin_sao_z8eilxkm">Vipin Sao on Contra</a></div>
+    <div class="fine mono"><span>Vipin Sao · 2026</span><span>Self-initiated concept for an open brief. Not a commissioned project.</span></div>
+  </div>
+</section>
+</main>
+
+<script>
+const M = window.MARKS, KEYS = Object.keys(M);
+const COPY = {
+  threshold:   ["Trust by welcome",  "An arch with someone standing in it: the front door to your care and your costs, and you are already inside.", "Arch and figure stay separate."],
+  overlap:     ["Trust by clarity",  "A record (the square) and a coin (the circle) share one corner, and that shared corner is the product.", "The shared corner stays open."],
+  cornerstone: ["Trust by solidity", "The first block laid, the one every other block is measured from.", "The joint between blocks survives."],
+  parity:      ["Trust by fairness", "An equals sign, slid apart: what you were quoted and what you were charged are the same length.", "Two clean bars, two pixels apart."],
+  ledger:      ["Trust by openness", "An open book, the oldest shorthand for nothing hidden: records on one page, money on the other.", "The spine keeps the pages apart."],
+};
+let sel = "threshold";
+const $ = (q, r = document) => [...r.querySelectorAll(q)];
+const box = k => `${M[k].vb[0]} ${M[k].vb[1]} ${M[k].vb[2]} ${M[k].vb[2]}`;
+const key = v => v === "sel" ? sel : v;
+const mark = k => `<i class="m" data-m="${k}"></i>`;
+const px = (k, n, w = n) => `<img class="px" alt="" data-r="${k}" data-px="${n}" data-fg="#11141A" style="width:${w}px;height:${w}px">`;
+const num = i => String(i + 1).padStart(2, "0");
+
+document.getElementById("tiles").innerHTML = KEYS.map((k, i) =>
+  `<button class="rv" style="--i:${i + 2}" data-pick="${k}" aria-label="Show ${M[k].name} in product"><div class="tile ${["p", "", "a", "", "p"][i]}">${mark(k)}</div><div class="cap mono"><span>${num(i)}</span><b>${M[k].name}</b></div></button>`).join("");
+document.getElementById("dirs").innerHTML = KEYS.map((k, i) =>
+  `<button class="dir rv" style="--i:${i}" data-pick="${k}" data-stay><div class="box">${mark(k)}</div><div class="k mono">${num(i)} · ${COPY[k][0]}</div><h3>${M[k].name}</h3><p>${COPY[k][1]}</p></button>`).join("");
+document.getElementById("zooms").innerHTML = KEYS.map((k, i) =>
+  `<div class="sc rv" style="--i:${i}"><div class="zoom"><img class="px" alt="${M[k].name} at 16 pixels, enlarged" data-r="${k}" data-px="16" data-fg="#11141A"></div><div class="lab mono"><b>${M[k].name}</b><span>16 px</span></div><p class="fact">${COPY[k][2]}</p><div class="ladder">${[16, 24, 32, 48, 64].map(n => px(k, n)).join("")}</div></div>`).join("");
+document.getElementById("cgrid").innerHTML = [["pos", "Positive", "Ink on light"], ["rev", "Reversed", "Light on ink"], ["col", "On colour", "White on brand colour"]]
+  .map(([c, a, b]) => `<div class="rl"><b>${a}</b><span class="mono">${b}</span></div>` + KEYS.map(k => `<div class="t ${c}">${mark(k)}</div>`).join("")).join("");
+document.getElementById("picker").innerHTML = KEYS.map(k => `<button data-pick="${k}" data-stay>${mark(k)}${M[k].name}</button>`).join("");
+const tones = ["#C9A98F", "#E9E5DA", "#8FA08C", "#7C8AA0", "#D8C9A8", "#B7B2C4", "#E9E5DA", "#A9B9B4", "#CDB7B0", "#9AA7B8", "#E9E5DA", "#BFC8A6", "#8E99A8", "#D3BFA2", "#E9E5DA", "#A7B5A0", "#C2B4C6", "#E9E5DA", "#93A3A6", "#D6C4B4"];
+document.getElementById("home").innerHTML = tones.map((c, i) => i === 5
+  ? `<div class="ic"><span class="app">${mark("sel")}</span>yourapp</div>`
+  : `<div class="ic"><i style="background:${c}"></i><u style="width:${24 + (i * 7) % 16}px"></u></div>`).join("");
+document.getElementById("csmark").innerHTML = M.threshold.d;
+$("[data-d]").forEach(el => el.innerHTML = el.dataset.d === "split" ? M.threshold.d.replace("<circle", '<circle fill="#2B4EF0"') : M.threshold.d);
+
+// true-pixel rasters: the vector drawn into an n×n canvas and shown unsmoothed
+const cache = {};
+function raster(k, n, fg) {
+  const id = k + n + fg;
+  return cache[id] ||= new Promise(done => {
+    const img = new Image();
+    img.onload = () => {
+      const c = document.createElement("canvas");
+      c.width = c.height = n;
+      c.getContext("2d").drawImage(img, 0, 0, n, n);
+      done(c.toDataURL());
+    };
+    img.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="${n}" height="${n}" viewBox="${box(k)}" fill="${fg}">${M[k].d}</svg>`);
+  });
+}
+function paint(onlySel) {
+  $(onlySel ? '[data-m="sel"]' : "[data-m]").forEach(el => el.innerHTML = `<svg viewBox="${box(key(el.dataset.m))}" fill="currentColor" aria-hidden="true">${M[key(el.dataset.m)].d}</svg>`);
+  return Promise.all($(onlySel ? '[data-r="sel"]' : "[data-r]").map(async el => { el.src = await raster(key(el.dataset.r), +el.dataset.px, el.dataset.fg); }));
+}
+function select(k) {
+  sel = k;
+  $("[data-pick]").forEach(b => b.setAttribute("aria-pressed", b.dataset.pick === k));
+  $("[data-name]").forEach(el => el.textContent = M[k].name);
+  $("[data-sent]").forEach(el => el.textContent = COPY[k][1]);
+  // the tab icon of this page is the live favicon test
+  document.getElementById("fav").href = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(
+    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${box(k)}"><style>g{fill:#11141A}@media(prefers-color-scheme:dark){g{fill:#F2EFE8}}</style><g>${M[k].d}</g></svg>`);
+  return paint(true);
+}
+$("[data-pick]").forEach(b => b.addEventListener("click", () => {
+  select(b.dataset.pick);
+  if (!("stay" in b.dataset)) document.getElementById("product").scrollIntoView();
+}));
+window.READY = Promise.all([paint(false), select(sel)]);
+
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { rootMargin: "0px 0px -8% 0px" });
+$(".rv").forEach(el => io.observe(el));
+</script>
+</body>
+</html>
